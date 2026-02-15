@@ -1,1 +1,1 @@
-# nsu-tasks
+# C-tasks
