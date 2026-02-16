@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="2.7.2" version="1.0">
+<project source="2.7.1" version="1.0">
 This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -87,24 +87,38 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(110,150)" to="(170,150)"/>
-    <wire from="(110,200)" to="(210,200)"/>
-    <wire from="(110,100)" to="(210,100)"/>
-    <wire from="(420,170)" to="(460,170)"/>
+    <wire from="(450,170)" to="(460,170)"/>
+    <wire from="(440,150)" to="(450,150)"/>
+    <wire from="(450,150)" to="(450,170)"/>
+    <wire from="(110,200)" to="(300,200)"/>
+    <wire from="(110,150)" to="(300,150)"/>
+    <wire from="(370,130)" to="(390,130)"/>
+    <wire from="(320,100)" to="(370,100)"/>
+    <wire from="(370,100)" to="(370,130)"/>
+    <wire from="(110,100)" to="(290,100)"/>
+    <wire from="(350,170)" to="(390,170)"/>
+    <wire from="(300,190)" to="(300,200)"/>
+    <comp lib="1" loc="(320,100)" name="NOT Gate"/>
+    <comp lib="0" loc="(110,100)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="1" loc="(440,150)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(110,150)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="1" loc="(350,170)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
     <comp lib="0" loc="(460,170)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
       <a name="label" val="R"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(110,150)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
-    </comp>
-    <comp lib="0" loc="(110,100)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
     </comp>
     <comp lib="0" loc="(110,200)" name="Pin">
       <a name="tristate" val="false"/>

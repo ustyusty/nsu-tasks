@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="2.7.2" version="1.0">
+<project source="2.7.1" version="1.0">
 This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -87,17 +87,16 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(110,100)" to="(270,100)"/>
+    <wire from="(360,150)" to="(420,150)"/>
+    <wire from="(420,150)" to="(420,170)"/>
     <wire from="(110,150)" to="(170,150)"/>
-    <wire from="(110,200)" to="(210,200)"/>
-    <wire from="(110,100)" to="(210,100)"/>
+    <wire from="(110,200)" to="(250,200)"/>
+    <wire from="(360,100)" to="(360,150)"/>
     <wire from="(420,170)" to="(460,170)"/>
-    <comp lib="0" loc="(460,170)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="R"/>
-      <a name="labelloc" val="east"/>
-    </comp>
+    <wire from="(280,110)" to="(280,200)"/>
+    <wire from="(290,100)" to="(360,100)"/>
+    <comp lib="1" loc="(280,200)" name="NOT Gate"/>
     <comp lib="0" loc="(110,150)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="B"/>
@@ -105,6 +104,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(110,100)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="A"/>
+    </comp>
+    <comp lib="1" loc="(290,100)" name="Controlled Buffer"/>
+    <comp lib="0" loc="(460,170)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="R"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(110,200)" name="Pin">
       <a name="tristate" val="false"/>

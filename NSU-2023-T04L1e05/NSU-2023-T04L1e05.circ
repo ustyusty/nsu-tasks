@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="2.7.2" version="1.0">
+<project source="2.7.1" version="1.0">
 This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -87,10 +87,18 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(110,150)" to="(170,150)"/>
-    <wire from="(110,200)" to="(210,200)"/>
+    <wire from="(200,170)" to="(310,170)"/>
+    <wire from="(370,170)" to="(460,170)"/>
+    <wire from="(230,190)" to="(310,190)"/>
+    <wire from="(210,100)" to="(210,120)"/>
+    <wire from="(200,150)" to="(200,170)"/>
+    <wire from="(110,150)" to="(200,150)"/>
+    <wire from="(110,200)" to="(230,200)"/>
+    <wire from="(230,190)" to="(230,200)"/>
+    <wire from="(260,150)" to="(310,150)"/>
     <wire from="(110,100)" to="(210,100)"/>
-    <wire from="(420,170)" to="(460,170)"/>
+    <wire from="(210,120)" to="(260,120)"/>
+    <wire from="(260,120)" to="(260,150)"/>
     <comp lib="0" loc="(460,170)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -101,6 +109,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(110,150)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="B"/>
+    </comp>
+    <comp lib="1" loc="(370,170)" name="NAND Gate">
+      <a name="inputs" val="3"/>
     </comp>
     <comp lib="0" loc="(110,100)" name="Pin">
       <a name="tristate" val="false"/>
